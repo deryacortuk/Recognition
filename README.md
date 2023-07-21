@@ -1,6 +1,23 @@
 Computer Vision, Machine Learning, and Image Processing
 
+**VGG (Visual Geometry Group)** 
 
+VGG  is an image classification model developed by the Visual Geometry Group at the University of Oxford in 2014. It is a significant milestone in the field of deep learning and can be used for various visual processing tasks such as visual recognition, image classification, and object detection.
+
+The main characteristic of VGG is its deep architecture. The original VGG model consists of 16 or 19 layers and includes numerous convolutional layers with small 3x3 filters. This depth and filter size contribute to the impressive classification performance of VGG.
+
+The key components of VGG are as follows:
+
+1.  Convolutional Layers: Sequential convolutional layers equipped with 3x3 filters extract feature maps from the input image, allowing the model to learn low-level features present in the image.
+    
+2.  Activation Functions: After the convolutional layers, activation functions such as ReLU (Rectified Linear Unit) are used to enable the model to learn non-linear features.
+    
+3.  Pooling Layers: Pooling layers (typically max pooling) are employed to reduce the size of feature maps, thereby reducing computational complexity.
+    
+4.  Fully Connected Layers: The feature maps are fed into fully connected layers for classification. These layers provide the final classification results.
+    
+
+VGG's impressive performance and simple, repetitive architecture have highlighted the significance of deep learning in image classification. The use of VGG's basic architecture as a foundation in more complex models has led to numerous successful studies in the field of deep learning.
 
 
 **R-CNN (Region-Based Convolutional Neural Network)**
