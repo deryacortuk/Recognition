@@ -56,31 +56,16 @@ By combining these improvements, Fast R-CNN achieves faster object detection com
 
 
 
-**Faster R-CNN**
 
-Faster R-CNN is an extension of the Fast R-CNN algorithm for object detection, introduced to further improve the speed and accuracy of object detection systems. It addresses the region proposal stage's computational bottleneck by introducing a Region Proposal Network (RPN) to generate region proposals more efficiently. Faster R-CNN builds upon the successes of R-CNN, Fast R-CNN, and extends them with a unified architecture.
-
-Key components of Faster R-CNN:
-
-1.  Region Proposal Network (RPN): The RPN is a fully convolutional network that shares convolutional features with the subsequent object detection network. It generates region proposals (candidate object bounding boxes) based on anchor boxes at different scales and aspect ratios. The RPN predicts objectness scores and bounding box offsets, and the most promising region proposals are forwarded to the next stage. 
-    
-2.  Region of Interest (RoI) Align: Faster R-CNN introduces RoI Align, an improvement over RoI Pooling used in Fast R-CNN. RoI Align addresses quantization issues in RoI Pooling, providing more accurate spatial alignment of features for each region proposal.
-    
-3.  Unified Architecture: Faster R-CNN unifies the region proposal generation and object detection into a single neural network. The RPN generates region proposals, and these proposals are fed to the subsequent object detection network for classification and bounding box regression. This unified architecture allows end-to-end training and faster processing.
-    
-
-The key advantages of Faster R-CNN are improved speed and accuracy compared to previous object detection methods. By incorporating the RPN, Faster R-CNN significantly reduces the computational overhead of generating region proposals, making it one of the fastest and most accurate object detection algorithms.
-
-Faster R-CNN has become a popular choice in computer vision tasks that require efficient and accurate object detection, such as autonomous driving, surveillance, and robotics. Its success has inspired further research and development in the field of deep learning-based object detection.
 
 
 **SSD (Single Shot Multibox Detector)**
 
-SSD  is a deep learning model used for object detection. Compared to other traditional object detection methods, SSD is known for its faster and more efficient performance. SSD is referred to as a single-shot object detection algorithm because it can perform object detection in a single forward pass.
+SSD  is a deep-learning model used for object detection. Compared to other traditional object detection methods, SSD is known for its faster and more efficient performance. SSD is referred to as a single-shot object detection algorithm because it can perform object detection in a single forward pass.
 
-Key features of SSD are as follows:
+The key features of SSD are as follows:
 
-Multibox Method: SSD utilizes the multibox method to generate bounding boxes with different sizes and aspect ratios for each object class. This allows SSD to detect objects of various sizes and shapes effectively.
+Multibox Method: SSD utilizes the multi-box method to generate bounding boxes with different sizes and aspect ratios for each object class. This allows SSD to detect objects of various sizes and shapes effectively.
 
 Single Shot Detection: Unlike some other methods that first generate region proposals and then perform object detection in those regions, SSD combines these two steps in a single pass, making the process faster.
 
