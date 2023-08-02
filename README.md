@@ -1,5 +1,13 @@
 Computer Vision, Machine Learning, and Image Processing
 
+# Histograms of Oriented Gradients
+The basic idea of the method is the following:
+
+The picture is scanned with a detection window of varying size.
+For each position and size of the detection window, the window is subdivided in cells. The cells are in practice relatively small: they typically contain only a small part of the person to be detected, maybe the side of an arm, or the top of the head.
+In each cell, a gradient is computed for each pixel, and the gradients are used to fill a histogram: the value is the angle of the gradient, and the weight is the magnitude of the gradient.
+The histograms of all cells are put together and fed to a machine-learning discriminator to decide whether the cells of the current detection window correspond to a person or not.
+
 **VGG (Visual Geometry Group)** 
 
 VGG  is an image classification model developed by the Visual Geometry Group at the University of Oxford in 2014. It is a significant milestone in the field of deep learning and can be used for various visual processing tasks such as visual recognition, image classification, and object detection.
